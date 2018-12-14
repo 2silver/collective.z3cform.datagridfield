@@ -19,6 +19,6 @@ def to_2(context):
     """
     """
     logger.info('Upgrading collective.z3cform.datagridfield to version 2')
-    context.runAllImportStepsFromProfile('profile-collective.z3cform.datagridfield:to_2')
+    context.runAllImportStepsFromProfile('profile-collective.z3cform.datagridfield:default')
     context.runImportStepFromProfile(default_profile, 'plone.app.registry')
     logger.info('Reinstalled registry')
